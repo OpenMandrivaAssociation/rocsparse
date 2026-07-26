@@ -1,0 +1,77 @@
+diff -ruN rocsparse-pristine/rocsparse/library/src/auxiliary/rocsparse_auxiliary.cpp rocsparse-p2/rocsparse/library/src/auxiliary/rocsparse_auxiliary.cpp
+--- a/library/src/auxiliary/rocsparse_auxiliary.cpp	2026-07-15 16:25:31.267886200 +0200
++++ b/library/src/auxiliary/rocsparse_auxiliary.cpp	2026-07-24 04:07:02.063272474 +0200
+@@ -22,6 +22,7 @@
+  * ************************************************************************ */
+ 
+ #include "rocsparse.h"
++#include <cstring>
+ #include "rocsparse_control.hpp"
+ #include "rocsparse_handle.hpp"
+ #include "rocsparse_utility.hpp"
+diff -ruN rocsparse-pristine/rocsparse/library/src/common/rocsparse_argdescr.cpp rocsparse-p2/rocsparse/library/src/common/rocsparse_argdescr.cpp
+--- a/library/src/common/rocsparse_argdescr.cpp	2026-07-15 16:25:31.267886200 +0200
++++ b/library/src/common/rocsparse_argdescr.cpp	2026-07-24 04:07:02.074994550 +0200
+@@ -24,6 +24,7 @@
+  * ************************************************************************ */
+ 
+ #include "rocsparse-export.h"
++#include <cstring>
+ 
+ #include "rocsparse_control.hpp"
+ #include "rocsparse_envariables.hpp"
+diff -ruN rocsparse-pristine/rocsparse/library/src/extra/rocsparse_bsrgemm_calc.cpp rocsparse-p2/rocsparse/library/src/extra/rocsparse_bsrgemm_calc.cpp
+--- a/library/src/extra/rocsparse_bsrgemm_calc.cpp	2026-07-15 16:25:31.281886300 +0200
++++ b/library/src/extra/rocsparse_bsrgemm_calc.cpp	2026-07-24 04:07:02.136479159 +0200
+@@ -23,6 +23,7 @@
+  * ************************************************************************ */
+ 
+ #include "rocsparse_bsrgemm_calc.hpp"
++#include <cstring>
+ #include "../conversion/rocsparse_identity.hpp"
+ #include "bsrgemm_device.h"
+ #include "csrgemm_device.h"
+diff -ruN rocsparse-pristine/rocsparse/library/src/extra/rocsparse_csrgemm_calc.cpp rocsparse-p2/rocsparse/library/src/extra/rocsparse_csrgemm_calc.cpp
+--- a/library/src/extra/rocsparse_csrgemm_calc.cpp	2026-07-15 16:25:31.282886500 +0200
++++ b/library/src/extra/rocsparse_csrgemm_calc.cpp	2026-07-24 04:07:02.126995152 +0200
+@@ -23,6 +23,7 @@
+  * ************************************************************************ */
+ 
+ #include "rocsparse_csrgemm_calc.hpp"
++#include <cstring>
+ #include "../conversion/rocsparse_identity.hpp"
+ #include "csrgemm_device.h"
+ #include "internal/extra/rocsparse_csrgemm.h"
+diff -ruN rocsparse-pristine/rocsparse/library/src/extra/rocsparse_csrgemm_nnz_calc.cpp rocsparse-p2/rocsparse/library/src/extra/rocsparse_csrgemm_nnz_calc.cpp
+--- a/library/src/extra/rocsparse_csrgemm_nnz_calc.cpp	2026-07-15 16:25:31.283886400 +0200
++++ b/library/src/extra/rocsparse_csrgemm_nnz_calc.cpp	2026-07-24 04:07:02.108573255 +0200
+@@ -23,6 +23,7 @@
+  * ************************************************************************ */
+ 
+ #include "rocsparse_csrgemm_nnz_calc.hpp"
++#include <cstring>
+ #include "../conversion/rocsparse_identity.hpp"
+ #include "csrgemm_device.h"
+ #include "rocsparse_control.hpp"
+diff -ruN rocsparse-pristine/rocsparse/library/src/include/rocsparse_control.hpp rocsparse-p2/rocsparse/library/src/include/rocsparse_control.hpp
+--- a/library/src/include/rocsparse_control.hpp	2026-07-15 16:25:31.287886600 +0200
++++ b/library/src/include/rocsparse_control.hpp	2026-07-24 04:07:02.050994273 +0200
+@@ -23,6 +23,7 @@
+  * ************************************************************************ */
+ 
+ #pragma once
++#include <cstring>
+ 
+ #include "rocsparse_argdescr.hpp"
+ #include "rocsparse_common.hpp"
+diff -ruN rocsparse-pristine/rocsparse/library/src/level2/rocsparse_csrmv_lrb_info.cpp rocsparse-p2/rocsparse/library/src/level2/rocsparse_csrmv_lrb_info.cpp
+--- a/library/src/level2/rocsparse_csrmv_lrb_info.cpp	2026-07-15 16:25:31.294886600 +0200
++++ b/library/src/level2/rocsparse_csrmv_lrb_info.cpp	2026-07-24 04:07:02.088264873 +0200
+@@ -23,6 +23,7 @@
+  * ************************************************************************ */
+ 
+ #include "rocsparse_control.hpp"
++#include <cstring>
+ #include "rocsparse_lrb_info.hpp"
+ #include "rocsparse_utility.hpp"
+ 
