@@ -2,7 +2,7 @@
 
 Name:		rocsparse
 Version:	7.14.0
-Release:	1
+Release:	2
 Summary:	HIP sparse linear algebra library
 License:	MIT
 Group:		System/Libraries
@@ -25,7 +25,6 @@ BuildRequires:	rocprim-devel
 # BuildRequires:	rocblas-devel
 # BuildRequires:	roctracer / roctx
 
-ExclusiveArch:	%{x86_64} %{aarch64}
 
 %description
 rocSPARSE implements sparse BLAS and related operations for HIP.
