@@ -1,13 +1,13 @@
-# HIP sparse linear algebra (TheRock 7.14)
+# HIP sparse linear algebra (TheRock 10.0)
 
 Name:		rocsparse
-Version:	7.14.0
-Release:	2
+Version:	10.0.0
+Release:	1
 Summary:	HIP sparse linear algebra library
 License:	MIT
 Group:		System/Libraries
 URL:		https://github.com/ROCm/rocm-libraries
-Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-7.14/rocsparse.tar.gz#/rocsparse-%{version}.tar.gz
+Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.0/rocsparse.tar.gz#/rocsparse-%{version}.tar.gz
 # Clang 23 freestanding headers no longer pull in strncpy/memcpy via transitive includes
 Patch0:		0001-include-cstring.patch
 
